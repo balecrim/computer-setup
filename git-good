@@ -1,0 +1,8 @@
+#!/bin/bash
+
+git config --global alias.lg "log --pretty=oneline --abbrev-commit --graph --decorate"
+git config --global alias.lag "log --pretty=oneline --abbrev-commit --graph --decorate --all"
+
+git config --global user.email "bernardo@alecrim.dev"
+git config --global user.name  "Bernardo Alecrim"
+

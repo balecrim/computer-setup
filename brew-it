@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Downloads and installs homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+# Setup initial packages - updating git is very important
+brew install aria2 carthage gettext	git	libssh2	lsd	mint openssl@1.1 pcre2 swiftlint
+
+# Adds aditional repos for binary software and fonts
+brew tap homebrew/cask
+brew tap homebrew/cask-fonts
+
+# Installs most of my standard environment
+brew cask install abstract adobe-creative-cloud font-fira-code \
+    font-firacode-nerd-font google-chrome iterm2 jetbrains-toolbox \ 
+    notion reveal sketch slack spotify visual-studio-code zeplin

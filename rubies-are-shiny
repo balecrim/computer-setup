@@ -1,4 +1,4 @@
-#!/usr/bin/sh
+#!/bin/bash
 
 curl -sL -O https://github.com/neonichu/ruby-domain_name/releases/download/v0.5.99999999/domain_name-0.5.99999999.gem
 sudo gem install domain_name-0.5.99999999.gem
@@ -7,5 +7,5 @@ rm -f domain_name-0.5.99999999.gem
 
 sudo gem install cocoapods xcpretty xcodegen
 
-echo -e "\n Now choose a version and install using xcversion install VERSION"
+echo -e "\nNow choose a version and install using xcversion install VERSION"
 echo -e "Then choose it by running xcversion select VERSION --symlink"
